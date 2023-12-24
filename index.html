@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte De Retete</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="background"></div>
+        <div class="item-view">
+            <div class="icon-div"><i class="fa-solid fa-x"></i></div>
+            <img class="item-img" src="data:image/png;base64,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" alt="An image of a food" width="310" height="310">
+            <div class="name">asd</div>
+            <div class="separation"></div>
+            <p class="ingredient-list">-asdas</p>
+            <div class="separation"></div>
+            <div class="description-div">asda</div>
+        </div>
+   
+    <div class="adding">
+        <form>
+            <div class="icon-div"><i class="fa-solid fa-x"></i></div>
+
+            <label class="form-label" id="image-label" for="image-file">Imaginea (310x310)</label>
+            <input required type="file" name="image-file" id="image-file" accept="image/*">
+            
+            <div class="separation"></div>
+            
+                <label class="form-label" for="name">Numele :</label>
+                <input required type="text" name="name" id="name" >
+
+            <div class="separation"></div>
+            
+            <label class="form-label" for="ingredients">Ingredientele :</label>
+            <textarea required name="ingredients" id="ingredients" cols="20" rows="5"></textarea>
+            
+            <div class="separation"></div>
+
+            <label class="form-label" for="description">Descrierea :</label>
+            <textarea required name="description" id="description" cols="20" rows="5"></textarea>
+
+            <button type="submit" class="form-btn">Terminat</button>
+        </form>
+    </div>
+    <div class="categories">
+        <div class="icon-div"><i class="fa-solid fa-x"></i></div>
+        <div>pizza</div>
+        <div>pizza</div>
+        <div>pizza</div>
+    </div>
+    <section class="section-container">
+        <h1>Retete</h1>
+        <div class="btns">
+            <div class="category-btn-container">
+                <p class="category-btn">Categori</p>
+            </div>
+            <div class="adding-btn">Adauga</div>
+        </div>
+        <div class="recipes">
+        </div>
+    </section>
+</body>
+</html>
